@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback page-DABS Hospital.</title>
+    <link rel="icon" href="titleicon.jpg">
+    <script type="text/javascript">
+function feedback()
+{
+    var mail=document.getElementById("mail").value;
+    var uname=document.getElementById("user").value;
+    var contact=document.getElementById("number").value;
+    
+     
+     
+     if( mail.length==0 || uname.length==0 || contact.length==0 )
+     {
+     
+        window.alert("required fields cannot be blank.");
+     }
+     else if(contact.length<=9 )
+         {
+              window.alert("Invalid number");
+         }
+     else if(contact.length>=11 )
+         {
+              window.alert("Invalid number");
+         }
+
+     else
+     {
+     window.alert("Thank-you for your feedback");
+          window.open("home.html","_self");
+     }
+    }
+
+
+
+</script>
+<style>
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+body{
+background-color:white;
+
+ background-image : url("img/5.jpg");
+ 
+ background-size:cover;
+
+
+}
+
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+div
+{
+    margin-left: 150px;
+    margin-top: 75px;
+font-family:myFirstFont;
+letter-spacing: 3px;
+width :900px;
+height:1450px;
+background:black;
+padding:10px;
+position: relative;
+top :5px;
+left:75px;
+  background:#6bc3ef;
+}
+@font-face
+    {
+        font-family: myFirstFont;
+        src: url(gunplay.ttf)
+    }
+h1
+{
+font-family:myFirstFont;
+color:black;
+float: right;
+font-size:135px;
+margin-top: 75px;
+    margin-right: 200px;
+}
+ select
+    {
+        width: 450px;
+        font-family:myFirstFont;
+        color:black;
+        font-size:18px;
+        background:  antiquewhite;
+        padding:5px;
+    }
+
+form{
+color : snow;
+margin: 30px;
+text-align :centre;
+}
+.but1 
+    {
+        font-family: myFirstFont;
+        font-size: 20px;
+        background:  antiquewhite;
+        border:none;
+        padding:5px;
+        width:25%;
+        text-align: center;
+    }
+.but1:hover
+    {
+            background-color:purple;
+            color: black;
+    }
+
+b
+{
+font-size:25px;
+color:snow;
+}
+input[type=text], input[type=password],input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    marquee{
+font-family:"Comic Sans MS";
+font-size:18px;
+color :aquamarine;
+bottom:80px;
+}
+
+copyrights{
+font-family:"Comic Sans MS";
+font-size:18px;
+color :rebeccapurple;
+bottom:80px;
+}
+
+img
+{
+display:block;
+margin:- 100px auto  0 auto;
+}
+ .top{
+	width:100%;
+	background-color:#2FA5EB !important;
+	border-bottom:2px solid #f0f0f0;
+}
+.top section{
+	width:1200px;
+	color:#fff;
+	background-color:#2FA5EB !important;
+	font-family:calibri;
+	padding:10px;
+    
+	text-align:right;
+}
+
+    .logo{
+	width:100%;
+	background-color:;
+	border-bottom:2px solid #f0f0f0;
+}
+    .logo section{
+	width:1200px;
+	background-color:;
+	font-family:calibri;
+	padding:10px;
+        padding-left: 150px;
+	text-align:left;
+}
+.logo section table a{
+	padding:5px;
+	text-decoration:none;
+	color:gray;
+    font-size: 18px;
+}
+.logo section table a:hover{
+	color:#428bca;
+	border-bottom:2px solid gray;
+}
+
+    .nav_down{
+	width:100%;
+	background-color:#2FA5EB !important;
+	border-bottom:2px solid #f0f0f0;
+}
+.nav_down section{
+	width:1200px;
+	color:#fff;
+	background-color:#000;
+	font-family:calibri;
+	padding:10px;
+    margin-left: 150px;
+	text-align:left;
+}
+
+
+</style>
+</head>
+<body>
+     <section class="top">
+		<section>
+		 Contact Us Mohitthakur22870@gmail.com 
+		</section>
+	</section>
+	
+	<section class="logo" style="background-color: #fff;">
+		<section>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="red">BOOKSWAGON </font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="oo.html">HOME</a> 
+							<a href="about.html">ABOUT US</a> 
+							
+							<a href="contact.html">CONTACT US</a>
+                           
+                            
+						</font>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+	
+        <br>
+        <br>
+    <br>
+    <br>
+<div style="margin:0 auto; border-radius: 50px;">
+    
+  <form name="myForm" method="post">
+   
+ 
+   
+   <br ><p style="text-align: center"><b>Feedback portal </b><p></p><br ><br >
+   
+     <label for="user name">USERNAME:</label><input type="text" placeholder="USER NAME"  name="user" id="user" required="true"><br />
+   
+      <label for="email">E-MAIL:</label><input type="text" placeholder="Email"  name="email" id="mail" required="true"><br />
+  
+ 
+             </select>
+   
+  <br><br><h2> Please Select one option out of 5 below for each question.</h2><br >
+   <p>1:How your overall experience with our bookstore</p><br >
+   <input type="radio" name="1"value="Very Positive" > Very good <br >
+   <input type="radio" name="1"value=" Positive" > good <br >
+   <input type="radio" name="1"value="moderate" > Moderate <br >
+      <input type="radio" name="1"value="bad" > Very Bad <br >
+   <input type="radio" name="1"value="very bad"> Bad<br ><br >
+     <p>2:How likely are you to recommend our site to others</p><br >
+   <input type="radio" name="2"value="Very lik" > Very likely <br >
+   <input type="radio" name="2"value=" lik "> somewhat likely <br >
+   <input type="radio" name="2"value="notlik" > unlikely <br >
+      <input type="radio" name="2"value="veryunlik" > Very unlikely<br ><br>
+      <p>3:How satisfied are you with our services</p><br >
+   <input type="radio" name="3"value="Very sat" > Very satisfied<br >
+   <input type="radio" name="3"value=" sat "> Not satisfied<br >
+   <input type="radio" name="3"value="neut" > Neutral <br >
+      <input type="radio" name="3"value="not satis" > Not Satisfied<br ><br>
+  
+      <br><br>
+       <label for="fdbk">Feedback:</label><br>
+      <textarea rows="6" cols="90">
+</textarea>
+      <br><br><br>
+    <button type="button"   onclick="feedback()"  class="but1">Submit</button><br ><br >
+
+ </form>
+ 
+ </div><br >
+    <br ><marquee>  </marquee>
+
+  <br>
+        <br>
+        <br>
+ <section class="nav_down">
+		<section>
+		 &copy; bookswagon, site designed & developed by Mohit Thakur
+		</section>
+	</section>
+</body>
+
+</html>
